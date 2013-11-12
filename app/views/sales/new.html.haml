@@ -1,0 +1,10 @@
+= semantic_form_for @sale do |f|
+  = f.semantic_errors :sale_type, :sale_date, :address, :city, :state, :zip, :description
+  = f.input :sale_type, as: :select, collection: ['garage', 'estate']
+  = f.input :sale_date, as: :string
+  = f.input :address
+  = f.input :city
+  = f.input :state, as: :select, collection: states
+  = f.input :zip
+  = f.input :description, as: :text
+  = f.action :submit, as: :button, label: 'Post Sale'
