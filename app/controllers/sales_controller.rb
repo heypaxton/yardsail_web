@@ -1,6 +1,6 @@
 class SalesController < ApplicationController
   def index
-    
+    "Hello index"  
   end
   def new
     @sale = Sale.new    
