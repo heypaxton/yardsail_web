@@ -1,0 +1,9 @@
+.row
+  %ul.sales-list.column.ten.center
+    - @sales.each do |s|
+      %li.sale
+        .inner
+          = s.address
+          = s.description
+  .column.ten.center
+    = will_paginate @sales

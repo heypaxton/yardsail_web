@@ -1,7 +1,8 @@
 class SalesController < ApplicationController
   def index
-    "Hello index"  
+    @sales = Sale.paginate(page: params[:page], per_page: 20)
   end
+ 
   def new
     @sale = Sale.new    
   end

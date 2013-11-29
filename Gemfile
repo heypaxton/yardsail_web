@@ -12,6 +12,7 @@ gem 'bootstrap-sass', '~> 3.0.2.0'
 gem 'formtastic'
 gem 'validates_timeliness', '~> 3.0'
 gem 'devise'
+gem 'will_paginate', '~> 3.0.5'
 
 gem 'guard-rails', group: [:development]
 gem 'rspec-rails', '~> 2.0', group: [:development, :test]
